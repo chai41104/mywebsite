@@ -1,0 +1,4 @@
+export const ABOUTME_PAGE = 'ABOUTME_PAGE';
+export const RESUME_PAGE = 'RESUME_PAGE';
+export const PORTFOLIO_PAGE = 'PORTFOLIO_PAGE';
+export const CONTACT_PAGE = 'CONTACT_PAGE';
