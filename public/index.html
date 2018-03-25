@@ -37,6 +37,14 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+       #map {
+        height: 200px;
+        width: 100%;
+       }
+    </style>
+
     <title>Thongchai Wirojsakseree</title>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -53,5 +61,22 @@
     <script src="%PUBLIC_URL%/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="%PUBLIC_URL%/dist/js/demo.js"></script>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 51.500512, lng: -0.022928};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKN97hWjTnX4k6HoW5c1gKaSbC4uJP2ng&callback=initMap">
+    </script>
   </body>
 </html>
