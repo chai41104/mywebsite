@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import MuiThemeProvider from './node_modules/material-ui/styles/MuiThemeProvider';
 import {ABOUTME_PAGE, RESUME_PAGE, PORTFOLIO_PAGE, CONTACT_PAGE} from './constant/page';
 import AboutMe from './component/AboutMe';
+import Contact from './component/Contact';
+import Resume from './component/Resume';
+import Portfolio from './component/Portfolio';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      page: ABOUTME_PAGE
-    };
   }
   render() {
     return (
@@ -58,25 +58,25 @@ class App extends Component {
       <aside class="main-sidebar">
         <section class="sidebar">
           <ul class="sidebar-menu" data-widget="tree">
-            <li class="active treeview">
-              <Link to="/">
+            <li>
+              <Link to="/aboutme">
                 <i class="fa fa-pie-chart"></i>
                 <span>About Me</span>
               </Link>
             </li>
-            <li class="active treeview">
+            <li>
               <Link to="/resume">
                 <i class="fa fa-pie-chart"></i>
                 <span>Resume (CV)</span>
               </Link>
             </li>
-            <li class="active treeview">
+            <li>
               <Link to="/portfolio">
                 <i class="fa fa-pie-chart"></i>
                 <span>Portfolio</span>
               </Link>
             </li>
-            <li class="active treeview">
+            <li>
               <Link to="/contact">
                 <i class="fa fa-pie-chart"></i>
                 <span>Contact</span>
@@ -92,9 +92,10 @@ class App extends Component {
       <div class="content-wrapper">
         <section class="content">
           <Route exact path="/" component={AboutMe} />
-          <Route path="/resume" component={AboutMe} />
-          <Route path="/portfolio" component={AboutMe} />
-          <Route path="/contact" component={AboutMe} />
+          <Route path="/aboutme" component={AboutMe} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
         </section>
       </div>
     );
