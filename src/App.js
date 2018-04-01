@@ -4,6 +4,7 @@ import {ABOUTME_PAGE, RESUME_PAGE, PORTFOLIO_PAGE, CONTACT_PAGE} from './constan
 import AboutMe from './component/AboutMe';
 import Contact from './component/Contact';
 import Resume from './component/Resume';
+import Skills from './component/Skills';
 import Portfolio from './component/Portfolio';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -60,25 +61,31 @@ class App extends Component {
           <ul class="sidebar-menu" data-widget="tree">
             <li>
               <Link to="/aboutme">
-                <i class="fa fa-pie-chart"></i>
+                <a class="mdi mdi-account"> </a>
                 <span>About Me</span>
               </Link>
             </li>
             <li>
               <Link to="/resume">
-                <i class="fa fa-pie-chart"></i>
-                <span>Resume (CV)</span>
+                <a class="mdi mdi-chart-pie"> </a>
+                <span>Experiances</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/skills">
+                <a class="mdi mdi-poll"> </a>
+                <span>Skills</span>
               </Link>
             </li>
             <li>
               <Link to="/portfolio">
-                <i class="fa fa-pie-chart"></i>
+                <a class="mdi mdi-laptop-chromebook"> </a>
                 <span>Portfolio</span>
               </Link>
             </li>
             <li>
               <Link to="/contact">
-                <i class="fa fa-pie-chart"></i>
+                <a class="mdi mdi-email-outline"> </a>
                 <span>Contact</span>
               </Link>
             </li>
@@ -94,6 +101,7 @@ class App extends Component {
           <Route exact path="/" component={AboutMe} />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/resume" component={Resume} />
+          <Route path="/skills" component={Skills} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
         </section>
