@@ -68,7 +68,7 @@ class App extends Component {
             <li>
               <Link to="/resume">
                 <a class="mdi mdi-chart-pie"> </a>
-                <span>Experiances</span>
+                <span>Experiences</span>
               </Link>
             </li>
             <li>
