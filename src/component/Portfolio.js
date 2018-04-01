@@ -46,9 +46,7 @@ const projects = [
 
 const Portfolio = () => (
 	<Card>
-		<CardTitle>
-			Highlight Projects
-		</CardTitle>
+		<CardTitle title="Highlight Projects"/>
 		<div style={styles.root}>
 		    <GridList
 		      cols={3}
