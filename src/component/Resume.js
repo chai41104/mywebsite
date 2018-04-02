@@ -81,7 +81,7 @@ const Resume = () => (
 				icon={<EducationIcon />}
 			>
 				<h3 className="vertical-timeline-element-title">A-Level at Rochester Independent College</h3>
-				<h4 className="vertical-timeline-element-subtitle">Studied Mathermatic</h4>
+				<h4 className="vertical-timeline-element-subtitle">Studied Further Mathematic, Mathematic, Statistics and Physics (A*AAA)</h4>
 				<h4 className="vertical-timeline-element-subtitle">2011 - 2012</h4>
 				<Button variant="raised" color="primary" href="https://en.wikipedia.org/wiki/Rochester_Independent_College">
 					<a className="mdi mdi-school mdi-light mdi-24px"> </a>
