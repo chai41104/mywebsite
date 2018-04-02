@@ -89,6 +89,12 @@ class App extends Component {
                 <span>Contact</span>
               </Link>
             </li>
+            <li>
+              <a href="https://thongchaiold.herokuapp.com/">
+                <a className="mdi mdi-logout"> </a>
+                <span>My old website</span>
+              </a>
+            </li>
           </ul>
         </section>
       </aside>
