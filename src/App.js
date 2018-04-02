@@ -30,22 +30,22 @@ class App extends Component {
   header() {
     return (
       <div>
-        <header class="main-header">
-          <a href="index2.html" class="logo">
-            <span class="logo-mini">TC</span>
-            <span class="logo-lg">Thongchai</span>
+        <header className="main-header">
+          <a href="index2.html" className="logo">
+            <span className="logo-mini">TC</span>
+            <span className="logo-lg">Thongchai</span>
           </a>
-          <nav class="navbar navbar-static-top">
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+          <nav className="navbar navbar-static-top">
+            <a href="#" className="sidebar-toggle" data-toggle="push-menu" role="button">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
             </a>
-            <div class="navbar-custom-menu">
-              <ul class="nav navbar-nav">
+            <div className="navbar-custom-menu">
+              <ul className="nav navbar-nav">
                 <li>
-                  <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                  <a href="#" data-toggle="control-sidebar"><i className="fa fa-gears"></i></a>
                 </li>
               </ul>
             </div>
@@ -56,36 +56,36 @@ class App extends Component {
   }
   mainSidebar() {
     return (
-      <aside class="main-sidebar">
-        <section class="sidebar">
-          <ul class="sidebar-menu" data-widget="tree">
+      <aside className="main-sidebar">
+        <section className="sidebar">
+          <ul className="sidebar-menu" data-widget="tree">
             <li>
               <Link to="/aboutme">
-                <a class="mdi mdi-account"> </a>
+                <a className="mdi mdi-account"> </a>
                 <span>About Me</span>
               </Link>
             </li>
             <li>
               <Link to="/resume">
-                <a class="mdi mdi-chart-pie"> </a>
+                <a className="mdi mdi-chart-pie"> </a>
                 <span>Experiences</span>
               </Link>
             </li>
             <li>
               <Link to="/skills">
-                <a class="mdi mdi-poll"> </a>
+                <a className="mdi mdi-poll"> </a>
                 <span>Skills</span>
               </Link>
             </li>
             <li>
               <Link to="/portfolio">
-                <a class="mdi mdi-laptop-chromebook"> </a>
+                <a className="mdi mdi-laptop-chromebook"> </a>
                 <span>Portfolio</span>
               </Link>
             </li>
             <li>
               <Link to="/contact">
-                <a class="mdi mdi-email-outline"> </a>
+                <a className="mdi mdi-email-outline"> </a>
                 <span>Contact</span>
               </Link>
             </li>
@@ -96,8 +96,8 @@ class App extends Component {
   }
   content() {
     return (
-      <div class="content-wrapper">
-        <section class="content">
+      <div className="content-wrapper">
+        <section className="content">
           <Route exact path="/" component={AboutMe} />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/resume" component={Resume} />
@@ -110,18 +110,18 @@ class App extends Component {
   }
   controlSidebar() {
     return (
-      <aside class="control-sidebar control-sidebar-dark">
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <aside className="control-sidebar control-sidebar-dark">
+        <ul className="nav nav-tabs nav-justified control-sidebar-tabs">
         </ul>
-        <div class="tab-content">
-          <div class="tab-pane" id="control-sidebar-home-tab">
+        <div className="tab-content">
+          <div className="tab-pane" id="control-sidebar-home-tab">
           </div>
         </div>
       </aside>
     );
   }
   controlSidebarBG() {
-    return (<div class="control-sidebar-bg"></div>);
+    return (<div className="control-sidebar-bg"></div>);
   }
 }
 

@@ -62,7 +62,7 @@ const Portfolio = () => (
 		          		iconStyle={{color: '#FFFFFF'}}
 		          		onClick={() => alert('Coming soon')}
 		          	>
-		          		<i class="material-icons" >event_note</i>
+		          		<i className="material-icons" >event_note</i>
 		          	</IconButton>
 		          }
 		          actionPosition="right"

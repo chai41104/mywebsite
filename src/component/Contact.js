@@ -29,17 +29,17 @@ class Contact extends Component {
           value={this.state.slideIndex}
         >
           <Tab
-            icon={<a class="mdi mdi-home-circle"></a>}
+            icon={<div className="mdi mdi-home-circle"></div>}
             label="My Address"
             value={0}
           />
           <Tab
-            icon={<a class="mdi mdi-gmail"></a>}
+            icon={<div className="mdi mdi-gmail"></div>}
             label="Email (Prefer)"
             value={1}
           />
           <Tab
-            icon={<a class="mdi mdi-cellphone-basic"></a>}
+            icon={<div className="mdi mdi-cellphone-basic"></div>}
             label="Mobile Number"
             value={2}
           />
@@ -82,7 +82,7 @@ class Contact extends Component {
             target="_blank"
             label="Send an email"
             primary={true}
-            icon={<a class="mdi mdi-email"></a>}
+            icon={<div className="mdi mdi-email"></div>}
           />
         </CardActions>
       </Card>
