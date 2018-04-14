@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from './node_modules/material-ui/styles/MuiThemeProvider';
-import {ABOUTME_PAGE, RESUME_PAGE, PORTFOLIO_PAGE, CONTACT_PAGE} from './constant/page';
 import AboutMe from './component/AboutMe';
 import Contact from './component/Contact';
 import Resume from './component/Resume';

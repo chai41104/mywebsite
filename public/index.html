@@ -73,13 +73,13 @@
 
     <script>
       function initMap() {
-        var uluru = {lat: 51.500512, lng: -0.022928};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        const home = {lat: 51.500512, lng: -0.022928};
+        const map = new google.maps.Map(document.getElementById('map'), {
           zoom: 17,
-          center: uluru
+          center: home
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
+        const marker = new google.maps.Marker({
+          position: home,
           map: map
         });
       }
